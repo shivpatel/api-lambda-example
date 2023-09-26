@@ -1,0 +1,23 @@
+{
+  "name": "api-lambda-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivpatel/api-lambda-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivpatel/api-lambda-example/issues"
+  },
+  "homepage": "https://github.com/shivpatel/api-lambda-example#readme",
+  "dependencies": {
+    "mongoose": "^7.4.4"
+  }
+}
