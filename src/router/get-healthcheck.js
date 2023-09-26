@@ -1,6 +1,6 @@
 import CustomError from '../component/error/custom'
 
-export default async function(pathParams = {}, queryParams = {}, body = '') {
+export default async function(ctx, pathParams = {}, queryParams = {}, body = '') {
   body = JSON.parse(body)
 
   if (2 != 2) {
