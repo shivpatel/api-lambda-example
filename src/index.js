@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+import CustomError from './component/error/custom'
 import env from './component/config/env'
 import router from './router'
 
@@ -26,7 +27,7 @@ module.exports.handler = async (event, context) => {
     const handler = router[event.requestContext?.resourceId]
 
     if (handler === undefined) {
-      throw new Error(`unsupported route: '${event.requestContext?.resourceId}'`)
+      throw new CustomError(`unsupported route: '${event.requestContext?.resourceId}'`, 400)
     }
 
     body = await handler(ctx, event.pathParameters, event.queryStringParameters, event.body)
